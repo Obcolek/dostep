@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- w head wpisujemy odnosniki do css czy js i informacje takie jak title i kod jezyka. -->
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- ustawienie kodu jezyka -->
+  <meta charset="UTF-8">
+  <!-- tytul strony widoczny w zakladce w przegladarce -->
+  <title>Login</title>
+  <script src="script.js" defer></script>
+</head>
+   <!-- html bez body nie istnieje, podstawowy element w ktorym budujemy stukture strony -->
+<body>
+  <!-- w main dajemy glowne elementy strony, ID daje mozliwosc odnoszenia sie do tego elementu w JS i CSS -->
+  <main id="main-holder">
+  <!-- h1 oznacza naglowek strony jako najwiekszy - domyslnie jest wiekszy i pogrubiony, moze byc kilka h1-h9 na stronie -->
+    <h1 id="login-header">Login</h1>
+
+  <!-- formularz przystosowany do logowania, ID daje mozliwosc odnoszenia sie do tego elementu w JS i CSS -->
+    <form id="login-form">
+	<!-- pola tekstowe do wprowadzania danych -->
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+
+  </main>
+
+</body>
+</html>
