@@ -1,0 +1,96 @@
+/* ustawienie strony na 100% wysokosci */
+html {
+  height: 100%;
+}
+
+/* wysokosc strony w body, ustawienie wszystkich marginesow na 0px, ustawienie czcionki na arial w przypadku gdy nie ma to Helvetica jak tego nie ma to dostepna czcionke sans-serif.*/
+/* wyswietlanie w typie gird co pozwala na dobre pozycjionowanie elemntow storny www, align i justify to elementy grida, background ustawia kolor tla elementu body.*/
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: #0b2600;
+}
+
+/* width ustawia szerokosc elementu main, height wysokosc, background kolor tla tego elementu, border-radius zaokragla wszystkie logi o 7px, box-shadow daje cien elementowi  */
+#main-holder {
+  width: 50%;
+  height: 70%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(210, 206, 240); 
+  color: red;
+  border-radius: 7px; 
+  box-shadow: 0px 0px 5px 2px black;
+}
+
+/* ustawienia dla miejsca gdzie pojawia sie blad przy logowaniu */
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* ustawienia dla miejsca o bledzie, text-align centruje tekst, padding to wewnetrzny marignzes, font-size rozmair czcionki, font-weight - grubosc czcionki
+color - ustawia kolor tekstu, border- linia obramowania, opacity - ustawienia przezroczystosci */
+#login-error-msg {
+  width: 23%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000; 
+  border: 1px solid #8a0000; 
+  background-color: #e58f8f; 
+  opacity: 0; 
+}
+
+/* ustawienia dla drugiej linijki kodu o bledzie, display typ wyswietlania blokowy  */
+#error-msg-second-line {
+  display: block;
+}
+
+/* ustawienia formualrza do logowania, align-self - ustawia pozycje elementu */
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* ustawienia placeholdera w formualrzu do logowania */
+.login-form-field::placeholder {
+  color: #00fc0d;
+  font-weight: bold;
+}
+
+/* ustawienia formualrza do logowania, border-bottom dodanie dolnego obramowania, margin-bottom - ustawia dolny margines */
+.login-form-field {
+  border: none; 
+  border-bottom: 1px solid #171ade; 
+  margin-bottom: 10px;
+  border-radius: 3px; 
+  outline: none;
+  padding: 0px 0px 5px 5px; 
+}
+
+/* ustawienie przycisku do logowania, cursor - ustawienie zmiany widoku kursora myszki */
+#login-form-submit {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white; 
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor:cell;
+  outline: none;
+}
